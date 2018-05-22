@@ -353,12 +353,24 @@
                 
               
 
-              <time title="创建时间：2018-05-22 19:53:40 / 修改时间：22:36:14" itemprop="dateCreated datePublished" datetime="2018-05-22T19:53:40+08:00">2018-05-22</time>
+              <time title="创建时间：2018-05-22 19:53:40" itemprop="dateCreated datePublished" datetime="2018-05-22T19:53:40+08:00">2018-05-22</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-05-23 00:20:43" itemprop="dateModified" datetime="2018-05-23T00:20:43+08:00">2018-05-23</time>
               
             
           </span>
@@ -437,10 +449,10 @@
 <li>Windows10</li>
 <li>Powershell 5.1</li>
 </ul>
-<h3 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h3><p>下载字体<a href="https://link.zhihu.com/?target=https%3A//github.com/Microsoft/BashOnWindows/files/1362006/Microsoft.YaHei.Mono.zip" target="_blank" rel="noopener">Microsoft YaHei Mono</a></p>
+<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><p>下载字体<a href="https://link.zhihu.com/?target=https%3A//github.com/Microsoft/BashOnWindows/files/1362006/Microsoft.YaHei.Mono.zip" target="_blank" rel="noopener">Microsoft YaHei Mono</a></p>
 <p>Microsoft YaHei Mono = YaHei + Consolas</p>
 <p>将PowerShell的字体改为这个<br><img src="/blog/2018/05/22/Powershell美化/02.png"></p>
-<h3 id="配色"><a href="#配色" class="headerlink" title="配色"></a>配色</h3><p>Microsoft出过一个用于Powershell的配色工具<a href="https://github.com/Microsoft/Console/tree/master/tools/ColorTool" target="_blank" rel="noopener">ColorTool</a></p>
+<h2 id="配色"><a href="#配色" class="headerlink" title="配色"></a>配色</h2><p>Microsoft出过一个用于Powershell的配色工具<a href="https://github.com/Microsoft/Console/tree/master/tools/ColorTool" target="_blank" rel="noopener">ColorTool</a></p>
 <p>下载解压后，在解压后的文件夹里打开Powershell，运行<br><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">colortool -b campbell</span><br></pre></td></tr></table></figure></p>
 <p>Powershell就应用了campbell schemes</p>
 <p>该工具默认提供了以下Schemes：</p>
@@ -455,12 +467,12 @@
 <li>deuteranopia : A color scheme targeted towards making red and green clearer to users with red green colorblindness, and deuteranopia.</li>
 </ul>
 <p>如果想看看更多的Schemes，可以到<a href="https://github.com/mbadolato/iTerm2-Color-Schemes" target="_blank" rel="noopener">iTerm2-Color-Schemes</a>上下载，只要把下载的itermcolors格式文件放到colortool下的schemes文件夹下即可。</p>
-<h3 id="Powershell主题设置"><a href="#Powershell主题设置" class="headerlink" title="Powershell主题设置"></a>Powershell主题设置</h3><p>如果有用过oh-my-zsh的，肯定对上面各种酷炫的theme很有印象。然而在Powershell中，用Powershell configuration就可以非常简单的实现oh-my-zsh里的大部分theme。</p>
+<h2 id="Powershell主题设置"><a href="#Powershell主题设置" class="headerlink" title="Powershell主题设置"></a>Powershell主题设置</h2><p>如果有用过oh-my-zsh的，肯定对上面各种酷炫的theme很有印象。然而在Powershell中，用Powershell configuration就可以非常简单的实现oh-my-zsh里的大部分theme。</p>
 <p>这里以oh-my-zsh中的ys为例<br><img src="/blog/2018/05/22/Powershell美化/04.png"></p>
 <p>首先,打开Powershell,并输入<br><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">notepad $((<span class="built_in">Split-Path</span> <span class="variable">$profile</span> -Parent) + “/profile.ps1”)</span><br></pre></td></tr></table></figure></p>
 <p>如果不存在profile默认会创建，接着在打开的记事本里输入<br><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> prompt &#123;</span><br><span class="line"></span><br><span class="line">    <span class="variable">$path</span> = <span class="built_in">Split-Path</span> -leaf -path (<span class="built_in">Get-Location</span>)</span><br><span class="line">    <span class="variable">$Date</span> = <span class="built_in">Get-Date</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">Write-Host</span></span><br><span class="line">    <span class="built_in">Write-Host</span> <span class="string">"# "</span> -NoNewline -ForegroundColor Blue</span><br><span class="line">    <span class="built_in">Write-Host</span> <span class="variable">$env:USERNAME</span> -NoNewline -ForegroundColor Cyan</span><br><span class="line">    <span class="built_in">Write-Host</span> <span class="string">" in "</span> -NoNewline</span><br><span class="line">    <span class="built_in">Write-Host</span> <span class="variable">$path</span> -NoNewline -ForegroundColor Green</span><br><span class="line">    <span class="built_in">Write-Host</span> <span class="string">" "</span><span class="variable">$Date</span></span><br><span class="line">    <span class="built_in">Write-Host</span> <span class="string">"&gt;"</span> -NoNewline -ForegroundColor Magenta</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="string">" "</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>保存并重新打开Powershell后，就能发现样式就变得和ys一样了。<br>如果你还想显示Git status信息的话，就需要使用<a href="https://link.zhihu.com/?target=https%3A//github.com/dahlbyk/posh-git" target="_blank" rel="noopener">Posh-git</a>,其Github主页上有它的安装方式。</p>
-<blockquote><h3 id="Prerequisites"><a href="#Prerequisites" class="headerlink" title="Prerequisites"></a>Prerequisites</h3><p>Before installing posh-git make sure the following prerequisites have been met.</p>
+<blockquote><h2 id="Prerequisites"><a href="#Prerequisites" class="headerlink" title="Prerequisites"></a>Prerequisites</h2><p>Before installing posh-git make sure the following prerequisites have been met.</p>
 <ol>
 <li><p>Windows PowerShell 5.x or PowerShell Core 6.0.<br>You can get PowerShell Core 6.0 for Windows, Linux or macOS from [here][pscore-install].<br>Check your PowerShell version by executing <code>$PSVersionTable.PSVersion</code>.</p>
 </li>
@@ -469,7 +481,7 @@
 <li><p>Git must be installed and available via the PATH environment variable.<br>Check that <code>git</code> is accessible from PowerShell by executing <code>git --version</code> from PowerShell.<br>If <code>git</code> is not recognized as the name of a command, verify that you have Git installed.<br>If not, install Git from <a href="https://git-scm.com" target="_blank" rel="noopener">https://git-scm.com</a>.<br>If you have Git installed, make sure the path to git is in your PATH environment variable.</p>
 </li>
 </ol>
-<h3 id="Installing-posh-git-via-PowerShellGet"><a href="#Installing-posh-git-via-PowerShellGet" class="headerlink" title="Installing posh-git via PowerShellGet"></a>Installing posh-git via PowerShellGet</h3><p>posh-git is available on the [PowerShell Gallery][psgallery-v1] and can be installed using the PowerShellGet module.</p>
+<h2 id="Installing-posh-git-via-PowerShellGet"><a href="#Installing-posh-git-via-PowerShellGet" class="headerlink" title="Installing posh-git via PowerShellGet"></a>Installing posh-git via PowerShellGet</h2><p>posh-git is available on the [PowerShell Gallery][psgallery-v1] and can be installed using the PowerShellGet module.</p>
 <ol>
 <li><p>Start either Windows PowerShell 5.x or PowerShell Core 6.x (<code>pwsh</code>).</p>
 </li>
