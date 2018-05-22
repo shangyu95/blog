@@ -108,13 +108,22 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="ShangYu&#39;Blog">
-<meta property="og:url" content="https://shangyu95.github.io/blog/index.html">
+  <meta name="description" content="Powershell 是微软推出用于取代CMD的一款命令行工具。虽然使用上非常的强大，但是其外观一如以往的CMD一样，非常的丑。作为“颜值就是正义”的信徒，就想着动手改造一下，以此文来做个记录。 最终效果展示:  环境配置 Windows10 Powershell 5.1  字体下载字体Microsoft YaHei Mono Microsoft YaHei Mono = YaHei + Cons">
+<meta name="keywords" content="windows,powershell,美化">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Powershell美化">
+<meta property="og:url" content="https://shangyu95.github.io/blog/2018/05/22/Powershell美化/index.html">
 <meta property="og:site_name" content="ShangYu&#39;Blog">
+<meta property="og:description" content="Powershell 是微软推出用于取代CMD的一款命令行工具。虽然使用上非常的强大，但是其外观一如以往的CMD一样，非常的丑。作为“颜值就是正义”的信徒，就想着动手改造一下，以此文来做个记录。 最终效果展示:  环境配置 Windows10 Powershell 5.1  字体下载字体Microsoft YaHei Mono Microsoft YaHei Mono = YaHei + Cons">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://shangyu95.github.io/blog/2018/05/22/Powershell美化/01.png">
+<meta property="og:image" content="https://shangyu95.github.io/blog/2018/05/22/Powershell美化/02.png">
+<meta property="og:image" content="https://shangyu95.github.io/blog/2018/05/22/Powershell美化/04.png">
+<meta property="og:updated_time" content="2018-05-22T14:36:14.340Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ShangYu&#39;Blog">
+<meta name="twitter:title" content="Powershell美化">
+<meta name="twitter:description" content="Powershell 是微软推出用于取代CMD的一款命令行工具。虽然使用上非常的强大，但是其外观一如以往的CMD一样，非常的丑。作为“颜值就是正义”的信徒，就想着动手改造一下，以此文来做个记录。 最终效果展示:  环境配置 Windows10 Powershell 5.1  字体下载字体Microsoft YaHei Mono Microsoft YaHei Mono = YaHei + Cons">
+<meta name="twitter:image" content="https://shangyu95.github.io/blog/2018/05/22/Powershell美化/01.png">
 
 
 
@@ -123,7 +132,7 @@
 
 
 
-  <link rel="canonical" href="https://shangyu95.github.io/blog/"/>
+  <link rel="canonical" href="https://shangyu95.github.io/blog/2018/05/22/Powershell美化/"/>
 
 
 
@@ -133,7 +142,7 @@
   };
 </script>
 
-  <title>ShangYu'Blog</title>
+  <title>Powershell美化 | ShangYu'Blog</title>
   
 
 
@@ -180,8 +189,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -290,9 +298,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -324,11 +332,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/blog/2018/05/22/Powershell美化/" itemprop="url">
-                  Powershell美化
-                </a>
+          <h1 class="post-title" itemprop="name headline">Powershell美化
               
             
           </h1>
@@ -428,9 +432,7 @@
       
 
       
-        
-          
-            <p><a href="https://docs.microsoft.com/en-us/powershell/" target="_blank" rel="noopener">Powershell</a> 是微软推出用于取代CMD的一款命令行工具。虽然使用上非常的强大，但是其外观一如以往的CMD一样，非常的丑。作为“颜值就是正义”的信徒，就想着动手改造一下，以此文来做个记录。</p>
+        <p><a href="https://docs.microsoft.com/en-us/powershell/" target="_blank" rel="noopener">Powershell</a> 是微软推出用于取代CMD的一款命令行工具。虽然使用上非常的强大，但是其外观一如以往的CMD一样，非常的丑。作为“颜值就是正义”的信徒，就想着动手改造一下，以此文来做个记录。</p>
 <p><strong>最终效果展示:</strong></p>
 <img src="/blog/2018/05/22/Powershell美化/01.png">
 <h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><ul>
@@ -483,8 +485,6 @@
 <p>posh-git安装好后，将之前的<code>profile.ps1</code>文件,修改成：<br><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="built_in">Import-Module</span> posh-git</span><br><span class="line"><span class="keyword">function</span> prompt &#123;</span><br><span class="line"></span><br><span class="line">    <span class="variable">$path</span> = <span class="built_in">Split-Path</span> -leaf -path (<span class="built_in">Get-Location</span>)</span><br><span class="line">    <span class="variable">$Date</span> = <span class="built_in">Get-Date</span></span><br><span class="line">    <span class="variable">$gitStatus</span> = Write-VcsStatus</span><br><span class="line"></span><br><span class="line">    <span class="built_in">Write-Host</span></span><br><span class="line">    <span class="built_in">Write-Host</span> <span class="string">"# "</span> -NoNewline -ForegroundColor Blue</span><br><span class="line">    <span class="built_in">Write-Host</span> <span class="variable">$env:USERNAME</span> -NoNewline -ForegroundColor Cyan</span><br><span class="line">    <span class="built_in">Write-Host</span> <span class="string">" in "</span> -NoNewline</span><br><span class="line">    <span class="built_in">Write-Host</span> <span class="variable">$path</span> -NoNewline -ForegroundColor Green</span><br><span class="line">    <span class="variable">$realLASTEXITCODE</span> = <span class="variable">$LASTEXITCODE</span></span><br><span class="line">    <span class="built_in">Write-Host</span> <span class="variable">$gitStatus</span> -NoNewline</span><br><span class="line">    <span class="variable">$global:LASTEXITCODE</span> = <span class="variable">$realLASTEXITCODE</span></span><br><span class="line">    <span class="built_in">Write-Host</span> <span class="string">" "</span><span class="variable">$Date</span></span><br><span class="line">    <span class="built_in">Write-Host</span> <span class="string">"&gt;"</span> -NoNewline -ForegroundColor Magenta</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="string">" "</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>以上，本次的美化教程到此结束。</p>
 
-          
-        
       
     </div>
 
@@ -495,6 +495,14 @@
     
 
     
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/blog/path/to/your/wechatqcode ex. /uploads/wechat-qcode.jpg" alt="林尚宇 wechat" style="width: 200px; max-width: 100%;"/>
+    <div>ex. subscribe to my blog by scanning my public wechat account</div>
+</div>
+
+      </div>
+    
 
     
 
@@ -502,14 +510,24 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/blog/tags/windows/" rel="tag"># windows</a>
+          
+            <a href="/blog/tags/powershell/" rel="tag"># powershell</a>
+          
+            <a href="/blog/tags/美化/" rel="tag"># 美化</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -519,14 +537,29 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -547,8 +580,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -650,6 +692,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#环境配置"><span class="nav-number">1.</span> <span class="nav-text">环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#字体"><span class="nav-number">1.1.</span> <span class="nav-text">字体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配色"><span class="nav-number">1.2.</span> <span class="nav-text">配色</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Powershell主题设置"><span class="nav-number">1.3.</span> <span class="nav-text">Powershell主题设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Prerequisites"><span class="nav-number">1.4.</span> <span class="nav-text">Prerequisites</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Installing-posh-git-via-PowerShellGet"><span class="nav-number">1.5.</span> <span class="nav-text">Installing posh-git via PowerShellGet</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -784,6 +842,10 @@
 
 
   
+  <script type="text/javascript" src="/blog/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/blog/js/src/post-details.js?v=6.3.0"></script>
+
+
 
   
 
@@ -798,6 +860,23 @@
     <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
   
 
+  
+    <script type="text/javascript">
+      var disqus_config = function () {
+        this.page.url = 'https://shangyu95.github.io/blog/2018/05/22/Powershell美化/';
+        this.page.identifier = '2018/05/22/Powershell美化/';
+        this.page.title = 'Powershell美化';
+        };
+      function loadComments () {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      }
+      
+        loadComments();
+      
+    </script>
   
 
 
@@ -843,10 +922,6 @@
   
 
   
-  
-    
-      
-    
   
 
   

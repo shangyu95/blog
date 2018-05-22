@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ShangYu&#39;Blog</title>
+  
+  <subtitle>热爱生活的小林同学</subtitle>
+  <link href="/blog/atom.xml" rel="self"/>
+  
+  <link href="https://shangyu95.github.io/blog/"/>
+  <updated>2018-05-22T14:36:14.340Z</updated>
+  <id>https://shangyu95.github.io/blog/</id>
+  
+  <author>
+    <name>林尚宇</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Powershell美化</title>
+    <link href="https://shangyu95.github.io/blog/2018/05/22/Powershell%E7%BE%8E%E5%8C%96/"/>
+    <id>https://shangyu95.github.io/blog/2018/05/22/Powershell美化/</id>
+    <published>2018-05-22T11:53:40.000Z</published>
+    <updated>2018-05-22T14:36:14.340Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/powershell/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Powershell&lt;/a&gt;
+        
+      
+    
+    </summary>
+    
+      <category term="windows" scheme="https://shangyu95.github.io/blog/categories/windows/"/>
+    
+      <category term="powershell" scheme="https://shangyu95.github.io/blog/categories/windows/powershell/"/>
+    
+    
+      <category term="windows" scheme="https://shangyu95.github.io/blog/tags/windows/"/>
+    
+      <category term="powershell" scheme="https://shangyu95.github.io/blog/tags/powershell/"/>
+    
+      <category term="美化" scheme="https://shangyu95.github.io/blog/tags/%E7%BE%8E%E5%8C%96/"/>
+    
+  </entry>
+  
+</feed>
