@@ -19,7 +19,7 @@ tags:
 - Windows10
 - Powershell 5.1
 
-### 字体
+## 字体
 下载字体[Microsoft YaHei Mono](https://link.zhihu.com/?target=https%3A//github.com/Microsoft/BashOnWindows/files/1362006/Microsoft.YaHei.Mono.zip)
 
 Microsoft YaHei Mono = YaHei + Consolas
@@ -27,7 +27,7 @@ Microsoft YaHei Mono = YaHei + Consolas
 将PowerShell的字体改为这个
 {% asset_img 02.png %}
 
-### 配色
+## 配色
 Microsoft出过一个用于Powershell的配色工具[ColorTool](https://github.com/Microsoft/Console/tree/master/tools/ColorTool)
 
 下载解压后，在解压后的文件夹里打开Powershell，运行
@@ -48,7 +48,7 @@ Powershell就应用了campbell schemes
 
 如果想看看更多的Schemes，可以到[iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes)上下载，只要把下载的itermcolors格式文件放到colortool下的schemes文件夹下即可。
 
-### Powershell主题设置
+## Powershell主题设置
 
 如果有用过oh-my-zsh的，肯定对上面各种酷炫的theme很有印象。然而在Powershell中，用Powershell configuration就可以非常简单的实现oh-my-zsh里的大部分theme。
 
@@ -81,7 +81,7 @@ function prompt {
 如果你还想显示Git status信息的话，就需要使用[Posh-git](https://link.zhihu.com/?target=https%3A//github.com/dahlbyk/posh-git),其Github主页上有它的安装方式。
 
 {% blockquote %}
-### Prerequisites
+## Prerequisites
 
 Before installing posh-git make sure the following prerequisites have been met.
 
@@ -100,7 +100,7 @@ Before installing posh-git make sure the following prerequisites have been met.
    If not, install Git from [https://git-scm.com](https://git-scm.com).
    If you have Git installed, make sure the path to git is in your PATH environment variable.
 
-### Installing posh-git via PowerShellGet
+## Installing posh-git via PowerShellGet
 
 posh-git is available on the [PowerShell Gallery][psgallery-v1] and can be installed using the PowerShellGet module.
 
